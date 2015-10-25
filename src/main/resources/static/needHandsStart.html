@@ -34,7 +34,7 @@
 	$(document).ready(function(){
 		$("#getHandBtn").click (
 			function () {
-				document.location = "needHandsStart.html";
+				alert('hi');
 			});
 	});
 </script>
@@ -46,38 +46,24 @@
 	<!-- The justified navigation menu is meant for single line per list item.
 		 Multiple lines will require custom code not provided by Bootstrap. -->
 	<div class="masthead">
-		<img src="/images/hands.png" class="img-responsive center-block" alt="Responsive image">
-		<nav>
-			<ul class="nav nav-justified">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Hands I need</a></li>
-				<li><a href="#">Hands I'm giving</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+		<img src="images/hands.png" class="img-responsive center-block" alt="Responsive image">
 	</div>
 
 	<!-- Jumbotron -->
-	<div class="jumbotron">
-		<h1>I Need Hands!</h1>
-		<p class="lead">Have something you need to get done but don't have the time to do it yourself, or maybe it's something you don't know how to do?  You need a helping hand!  I Need Hands connects people who have stuff that needs to get done
-		with people who have the time and know how to do it.  Just sign up and get started today!</p>
-		<p><a class="btn btn-lg btn-success" href="#" role="button">Get started</a></p>
+	<div>
+		<h1>What do you need hands with?</h1>
 	</div>
 
 	<!-- Example row of columns -->
-	<div class="row">
-		<div class="col-lg-6">
-			<h2>Need Hands</h2>
-			<p class="text-danger">You can find someone to do anything on I Need Hands.  Pick up groceries, clean your house, run errands, tutor your kids, build a rocket ship.  Anything!  Just tell us what you need help with and our team of helping hands will contact you.</p>
-			<p><a id="getHandBtn" class="btn btn-primary" href="#" role="button">Get a Hand &raquo;</a></p>
-		</div>
-		<div class="col-lg-6">
-			<h2>Have a Spare Hand</h2>
-			<p>Have some spare time?  Have an skill someone might need?  Become a helping hand and make some cash!  Take a look at what people need help with and see if there's anything you can do. </p>
-			<p><a class="btn btn-primary" href="#" role="button">Give a Hand &raquo;</a></p>
-		</div>
+	<div>
+		<ul class="nav nav-pills nav-stacked">
+			<li role="presentation" class="active"><a href="#">Errands</a></li>
+			<li role="presentation"><a href="#">House</a></li>
+			<li role="presentation"><a href="#">Kids</a></li>
+			<li role="presentation"><a href="#">Car</a></li>
+			<li role="presentation"><a href="#">Pets</a></li>
+			<li role="presentation"><a href="#">Senior Care</a></li>
+		</ul>
 	</div>
 
 	<!-- Site footer -->
