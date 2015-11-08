@@ -23,7 +23,8 @@
 	<script src="3rd/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<!--[if lt IE 9]>
+	<script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 	<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,7 +35,8 @@
 </head>
 
 <script>
-	$(document).ready(function(){
+	$(document).ready(function () {
+		$('#taskTime').datetimepicker();
 	});
 </script>
 
@@ -56,6 +58,7 @@
 	<!-- Example row of columns -->
 	<div>
 		<form>
+
 			<div class="form-group">
 				<div class="btn-group btn-group-justified" role="group" aria-label="...">
 					<div class="btn-group" role="group">
@@ -65,27 +68,18 @@
 						<button type="button" class="btn btn-default">Start/stop</button>
 					</div>
 				</div>
-				<div class="container">
-					<div class="row">
-						<div class='col-sm-6'>
-							<div class="form-group">
-								<div class='input-group date' id='taskTime'>
-									<input type='text' class="form-control" />
+
+				<div class="form-group">
+					<div class='input-group date' id='taskTime'>
+						<input type='text' class="form-control"/>
 									<span class="input-group-addon">
 										<span class="glyphicon glyphicon-calendar"></span>
 									</span>
-								</div>
-							</div>
-						</div>
-						<script type="text/javascript">
-							$(function () {
-								$('#taskTime').datetimepicker();
-							});
-						</script>
 					</div>
 				</div>
 				<a href="">Recurring?</a>
 			</div>
+
 			<div class="form-group">
 				<div class="btn-group btn-group-justified" role="group" aria-label="...">
 					<div class="btn-group" role="group">
@@ -95,19 +89,25 @@
 						<button type="button" class="btn btn-default">Begin/end</button>
 					</div>
 				</div>
+			</div>
+
+			<div class="form-group">
 				<input type="text" class="form-control" id="location" placeholder="here">
 			</div>
+
 			<div class="form-group">
 				<label for="price">Price</label>
 				<input type="number" class="form-control" id="price" placeholder="10.00">
 			</div>
+
 			<div class="form-group">
-				<label>
-					<label for="details">Details</label>
-					<textarea class="form-control" rows="5" id="details" placeholder="Give us more information on what you need."></textarea>
-				</label>
+				<label for="details">Details</label>
+				<textarea class="form-control" rows="5" id="details"
+						  placeholder="Give us more information on what you need."></textarea>
 			</div>
+
 			<button type="submit" class="btn btn-default">Post it!</button>
+
 		</form>
 	</div>
 
@@ -116,7 +116,8 @@
 		<p>&copy; I Need Hands 2016</p>
 	</footer>
 
-</div> <!-- /container -->
+</div>
+<!-- /container -->
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
